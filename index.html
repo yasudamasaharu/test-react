@@ -4,9 +4,34 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>todoリスト</title>
+  <link rel="stylesheet" href="styles/vendors/destyle.min.css">
+  <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-  
+  <div class="todo-list__container">
+    <div class="todo-list__input-area">
+      <input type="text" placeholder="TODOを入力">
+      <button>追加</button>
+    </div>
+    <div class="todo-list__uncomplete-area">
+      <h2 class="todo-list__title">未完了のTODO</h2>
+      <ul class="todo-list__ul">
+        <li class="todo-list__li">TODOです</li>
+        <button>完了</button>
+        <button>削除</button>
+      </ul>
+    </div>
+    <div class="todo-list__complete-area">
+      <h2 class="todo-list__title">完了したTODO</h2>
+      <ul class="todo-list__ul">
+        <li class="todo-list__li">TODOが完了した</li>
+        <button>戻す</button>
+      </ul>
+    </div>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
 </body>
 </html>
